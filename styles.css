@@ -318,3 +318,17 @@ footer{background:var(--ink);color:#fff;padding:66px 0 46px;border-radius:34px 3
   .page-hero{padding:48px 0 42px}
   .svc-list{padding:44px 0 52px}
 }
+
+/* --- conversion layer (2026-10-27) --- */
+.find-us{max-width:1100px;margin:0 auto;padding:14px 20px 22px;text-align:center;font-size:.95rem;opacity:.85}
+.find-us a{text-decoration:underline}
+.mobile-cta{display:none}
+@media (max-width:640px){
+  .mobile-cta{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;background:#0D1B2E;padding:10px 12px;gap:10px}
+  .mobile-cta a{flex:1;text-align:center;padding:10px 6px;border:1px solid #17585E;border-radius:8px;color:#fff;text-decoration:none;font-weight:600}
+  body{padding-bottom:64px}
+}
+.scope-form-wrap{max-width:720px;margin:48px auto;padding:0 20px}
+.scope-form-wrap form{display:grid;gap:12px}
+.scope-form-wrap input,.scope-form-wrap textarea{width:100%;padding:10px;border:1px solid #b9c4cf;border-radius:8px;font:inherit}
+.scope-form-wrap button{padding:12px 18px;border:0;border-radius:8px;background:#17585E;color:#fff;font-weight:700;cursor:pointer}

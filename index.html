@@ -3,13 +3,29 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Mobley Group — Systems &amp; Automation for Small Businesses | Las Vegas, NV</title>
-<meta name="description" content="AI voice receptionists, workflow automation, websites, branding, and social media management for small businesses — built in your accounts, documented, and handed over. You own everything. Las Vegas / Henderson, NV.">
+<title>The Mobley Group</title>
+<meta name="description" content="AI voice receptionists, workflow automation, websites, branding, and social media management for small businesses in Las Vegas and Henderson, NV. Built in your accounts, documented, and handed over — you own everything.">
 <link rel="icon" type="image/png" href="assets/logo-monogram.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+
+  <!-- SEO -->
+  <link rel="canonical" href="https://themobleygroup.com/">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0D1B2E">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Mobley Group">
+  <meta property="og:title" content="The Mobley Group">
+  <meta property="og:description" content="AI voice receptionists, workflow automation, websites, branding, and social media management for small businesses in Las Vegas and Henderson, NV. Built in your accounts, documented, and handed over — you own everything.">
+  <meta property="og:url" content="https://themobleygroup.com/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="The Mobley Group">
+  <meta name="twitter:description" content="AI voice receptionists, workflow automation, websites, branding, and social media management for small businesses in Las Vegas and Henderson, NV. Built in your accounts, documented, and handed over — you own everything.">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"The Mobley Group","url":"https://themobleygroup.com/","email":"nick@themobleygroup.com","description":"Systems and automation for small businesses: AI voice receptionists, workflow automation, websites, branding, and social media management. Built in your accounts, documented, and handed over.","areaServed":["Las Vegas NV","Henderson NV","North Las Vegas NV","Boulder City NV","Summerlin NV"],"address":{"@type":"PostalAddress","addressLocality":"Henderson","addressRegion":"NV","addressCountry":"US"},"sameAs":["https://nickmobley.gumroad.com/","https://www.fiverr.com/nickmobley296"]}</script>
+  <!-- /SEO -->
+  <!-- analytics: owner decision pending — privacy-respecting analytics snippet (Plausible/GA) goes here once the owner picks one. No tracking ID exists yet; nothing is faked. -->
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -246,6 +262,28 @@
     </div>
   </section>
 
+
+  <section class="scope-form-wrap" aria-labelledby="scope-form-h">
+    <h2 id="scope-form-h">Request a written scope</h2>
+    <p>Three boxes. They open in your own email app, addressed to nick@themobleygroup.com — nothing is stored on this site, and no account is created.</p>
+    <form id="scope-form">
+      <label>Your name <input type="text" id="sf-name" autocomplete="name" required></label>
+      <label>Your business <input type="text" id="sf-biz" autocomplete="organization"></label>
+      <label>What&rsquo;s eating your week? <textarea id="sf-need" rows="4" required></textarea></label>
+      <button type="submit">Compose my email &rarr;</button>
+    </form>
+    <script>
+    document.getElementById('scope-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var n = document.getElementById('sf-name').value.trim();
+      var b = document.getElementById('sf-biz').value.trim();
+      var d = document.getElementById('sf-need').value.trim();
+      var subject = 'Scope request' + (b ? ' — ' + b : '');
+      var body = 'Name: ' + n + '\nBusiness: ' + b + '\n\nWhat I need:\n' + d;
+      window.location.href = 'mailto:nick@themobleygroup.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    });
+    </script>
+  </section>
 </main>
 
 <footer>
@@ -285,5 +323,9 @@
   <!-- chatbot: phase 2, pending owner pick -->
 </footer>
 
+
+  <div class="find-us">Find us on: <a href="https://nickmobley.gumroad.com/" rel="noopener">Gumroad</a> &middot; <a href="https://www.fiverr.com/nickmobley296" rel="noopener">Fiverr</a></div>
+
+  <div class="mobile-cta"><a href="mailto:nick@themobleygroup.com">Email the studio</a><a href="services.html">See services</a></div>
 </body>
 </html>
