@@ -332,3 +332,7 @@ footer{background:var(--ink);color:#fff;padding:66px 0 46px;border-radius:34px 3
 .scope-form-wrap form{display:grid;gap:12px}
 .scope-form-wrap input,.scope-form-wrap textarea{width:100%;padding:10px;border:1px solid #b9c4cf;border-radius:8px;font:inherit}
 .scope-form-wrap button{padding:12px 18px;border:0;border-radius:8px;background:#17585E;color:#fff;font-weight:700;cursor:pointer}
+
+.proof-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:18px}
+.proof-grid article{border:1px solid #d7dee6;border-radius:12px;padding:18px}
+.proof-work{max-width:1100px;margin:48px auto;padding:0 20px}
